@@ -1,0 +1,28 @@
+##
+## EPITECH PROJECT, 2019
+## 105torus
+## File description:
+## 105torus
+##
+
+f(x) = ax⁴+bx³+cx²+dx+e
+f¹(x) = 4ax³+3bx²+cx+d
+
+1) BI
+        x0 = 0.5;
+
+|f(0.75)| < |f(x0)| : x0 = 0.75;    verify the number of iterations OR
+|f(0.25)| < |f(x0)| : x0 = 0.25;    verify by how much x0 changed (very small change can be considered as good enough)
+
+2) Newton
+
+        x0 = 0;
+        x1 = x0 - f(x0)
+                  -----     verify |x0 - x1| < 10^-n
+                  f¹(x0)
+
+3) SECANT METHOD
+
+   x0 = 0;      x2 =x0 f(x1) - x1 f(x0)
+   x1 = 1;          -------------------         verify |x0 - x1| < 10^-n
+                        f(x1) - f(x0)
